@@ -1,0 +1,53 @@
+body{
+	background-color: green;
+	background-image: url("../img/background.jpg");
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover contain auto 110%;
+	overflow: hidden;
+
+}
+
+#header {
+	display: flex;
+	flex-direction: row;
+}
+
+#pull1{
+	margin-top: -8px;
+	margin-left: 100px;
+	flex-direction: row;
+	animation: wind 15s ease-in-out infinite;
+	transform-origin: top center;
+}
+
+@keyframes wind{
+
+	0%{transform: rotate(2deg)}
+	3%{transform: rotate(1deg)}
+	7%{transform: rotate(0deg)}
+	13%{transform: rotate(1deg)}
+	19%{transform: rotate(-1deg)}
+	27%{transform: rotate(2deg)}
+	30%{transform: rotate(1deg)}
+	35%{transform: rotate(2deg)}
+	42%{transform: rotate(3deg)}
+	50%{transform: rotate(1deg)}
+	54%{transform: rotate(-1deg)}
+	60%{transform: rotate(0deg)}
+	73%{transform: rotate(1deg)}
+	100%{transform: rotate(3deg)}
+
+
+
+}
+
+#img1{
+	width: 100px;
+	height: 200px;
+
+}
+
+#pull1:hover{
+	transform: 10px;
+}
