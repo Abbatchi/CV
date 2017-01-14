@@ -1,25 +1,24 @@
 body{
-	background-color: green;
-	background-image: url("../img/background.jpg");
-	background-repeat: no-repeat;
-	background-position: right;
-	background-size: cover contain auto 110%;
-	overflow: hidden;
+	margin: -8px -8px -8px;
 
 }
 
 #header {
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+
 }
 
 #pull1{
 	margin-top: -8px;
-	margin-left: 100px;
 	flex-direction: row;
-	animation: wind 15s ease-in-out infinite;
+	animation: wind 30s ease-in-out infinite;
 	transform-origin: top center;
 }
+
 
 @keyframes wind{
 
@@ -34,13 +33,142 @@ body{
 	42%{transform: rotate(3deg)}
 	50%{transform: rotate(1deg)}
 	54%{transform: rotate(-1deg)}
-	60%{transform: rotate(0deg)}
-	73%{transform: rotate(1deg)}
-	100%{transform: rotate(3deg)}
+	59%{transform: rotate(-1deg)}
+	63%{transform: rotate(0deg)}
+	72%{transform: rotate(1deg)}
+	78%{transform: rotate(3deg)}
+	84%{transform: rotate(0deg)}
+	87%{transform: rotate(1deg)}
+	91%{transform: rotate(3deg)}
+	95%{transform: rotate(1deg)}
+	100%{transform: rotate(2deg)}
+}
 
+#pull2{
+	margin-top: -8px;
+	flex-direction: row;
+	animation: wind2 30s ease-in-out infinite;
+	transform-origin: top center;
+}
 
+@keyframes wind2{
+
+	0%{transform: rotate(0deg)}
+	3%{transform: rotate(1deg)}
+	7%{transform: rotate(3deg)}
+	13%{transform: rotate(1deg)}
+	19%{transform: rotate(2deg)}
+	27%{transform: rotate(2deg)}
+	30%{transform: rotate(1deg)}
+	35%{transform: rotate(2deg)}
+	42%{transform: rotate(3deg)}
+	50%{transform: rotate(1deg)}
+	54%{transform: rotate(-1deg)}
+	59%{transform: rotate(-1deg)}
+	63%{transform: rotate(0deg)}
+	72%{transform: rotate(1deg)}
+	78%{transform: rotate(3deg)}
+	84%{transform: rotate(2deg)}
+	87%{transform: rotate(1deg)}
+	91%{transform: rotate(0deg)}
+	95%{transform: rotate(1deg)}
+	100%{transform: rotate(0deg)}
+}
+
+#pull3{
+	margin-top: -8px;
+	flex-direction: row;
+	animation: wind3 30s ease-in-out infinite;
+	transform-origin: top center;
+}
+
+@keyframes wind3{
+
+	0%{transform: rotate(3deg)}
+	3%{transform: rotate(1deg)}
+	7%{transform: rotate(2deg)}
+	19%{transform: rotate(-1deg)}
+	27%{transform: rotate(2deg)}
+	30%{transform: rotate(1deg)}
+	35%{transform: rotate(2deg)}
+	42%{transform: rotate(3deg)}
+	50%{transform: rotate(1deg)}
+	54%{transform: rotate(-1deg)}
+	59%{transform: rotate(-1deg)}
+	63%{transform: rotate(0deg)}
+	72%{transform: rotate(1deg)}
+	78%{transform: rotate(3deg)}
+	84%{transform: rotate(0deg)}
+	87%{transform: rotate(1deg)}
+	91%{transform: rotate(2deg)}
+	95%{transform: rotate(1deg)}
+	100%{transform: rotate(0deg)}
 
 }
+
+#pull4{
+	margin-top: -8px;
+	flex-direction: row;
+	animation: wind4 30s ease-in-out infinite;
+	transform-origin: top center;
+}
+
+
+@keyframes wind4{
+
+	0%{transform: rotate(1deg)}
+	3%{transform: rotate(2deg)}
+	7%{transform: rotate(1deg)}
+	13%{transform: rotate(2deg)}
+	19%{transform: rotate(-1deg)}
+	27%{transform: rotate(2deg)}
+	30%{transform: rotate(1deg)}
+	35%{transform: rotate(-2deg)}
+	42%{transform: rotate(3deg)}
+	50%{transform: rotate(1deg)}
+	54%{transform: rotate(-1deg)}
+	59%{transform: rotate(-1deg)}
+	63%{transform: rotate(1deg)}
+	72%{transform: rotate(3deg)}
+	78%{transform: rotate(2deg)}
+	84%{transform: rotate(0deg)}
+	87%{transform: rotate(2deg)}
+	91%{transform: rotate(3deg)}
+	95%{transform: rotate(1deg)}
+	100%{transform: rotate(1deg)}
+}
+
+#pull5{
+	margin-top: -8px;
+	flex-direction: row;
+	animation: wind5 30s ease-in-out infinite;
+	transform-origin: top center;
+}
+
+@keyframes wind5{
+
+	0%{transform: rotate(3deg)}
+	3%{transform: rotate(1deg)}
+	7%{transform: rotate(2deg)}
+	13%{transform: rotate(1deg)}
+	19%{transform: rotate(-2deg)}
+	27%{transform: rotate(1deg)}
+	30%{transform: rotate(2deg)}
+	35%{transform: rotate(3deg)}
+	42%{transform: rotate(2deg)}
+	50%{transform: rotate(1deg)}
+	54%{transform: rotate(-1deg)}
+	59%{transform: rotate(-1deg)}
+	63%{transform: rotate(0deg)}
+	72%{transform: rotate(2deg)}
+	78%{transform: rotate(4deg)}
+	84%{transform: rotate(1deg)}
+	87%{transform: rotate(1deg)}
+	91%{transform: rotate(2deg)}
+	95%{transform: rotate(1deg)}
+	100%{transform: rotate(3deg)}
+}
+
 
 #img1{
 	width: 100px;
@@ -49,5 +177,41 @@ body{
 }
 
 #pull1:hover{
-	transform: 10px;
+
+	color: blue;
+}
+
+
+#background {
+	background-image: url("../img/background.jpg");
+	border-image: url('../img/kacheli.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;	
+	background-size: cover contain auto;
+	margin: 0 auto;
+	overflow: hidden;
+	height: 800px;
+	z-index: 0;
+
+}
+
+
+
+#kacheli{
+	float: right;
+	padding-right: 20em;
+	padding-top: 29.9em;
+	animation: kach 5s ease-in-out infinite;
+	transform-origin: top center;
+	}
+
+	@keyframes kach{
+
+	0%{transform: rotate(0deg)}
+	50%{transform: rotate(-0.4deg)}
+	100%{transform: rotate(0deg)}
+
+
+
+
 }
