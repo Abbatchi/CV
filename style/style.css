@@ -1,18 +1,19 @@
 body{
-	margin: -8px -8px -8px;
+	margin: 0;
 
 }
 
 #header {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
 	justify-content: space-around;
+	overflow: hidden;
 
 
 }
 
 #pull1{
+	z-index: 1;
 	margin-top: -8px;
 	flex-direction: row;
 	animation: wind 30s ease-in-out infinite;
@@ -45,6 +46,7 @@ body{
 }
 
 #pull2{
+	z-index: 2;
 	margin-top: -8px;
 	flex-direction: row;
 	animation: wind2 30s ease-in-out infinite;
@@ -76,6 +78,7 @@ body{
 }
 
 #pull3{
+	z-index: 3;
 	margin-top: -8px;
 	flex-direction: row;
 	animation: wind3 30s ease-in-out infinite;
@@ -107,6 +110,7 @@ body{
 }
 
 #pull4{
+	z-index: 4;
 	margin-top: -8px;
 	flex-direction: row;
 	animation: wind4 30s ease-in-out infinite;
@@ -139,6 +143,7 @@ body{
 }
 
 #pull5{
+	z-index: 5;
 	margin-top: -8px;
 	flex-direction: row;
 	animation: wind5 30s ease-in-out infinite;
@@ -165,7 +170,7 @@ body{
 	84%{transform: rotate(1deg)}
 	87%{transform: rotate(1deg)}
 	91%{transform: rotate(2deg)}
-	95%{transform: rotate(1deg)}
+	95%{transform: rotate(1deg)} 
 	100%{transform: rotate(3deg)}
 }
 
@@ -177,8 +182,33 @@ body{
 }
 
 #pull1:hover{
+	animation: pull infinite;
+	transform-origin: top center;
+}
+#pull2:hover{
+	animation: pull infinite;
+	transform-origin: top center;
+}
 
-	color: blue;
+#pull3:hover{
+	animation: pull infinite;
+	transform-origin: top center;
+}
+
+#pull4:hover{
+	animation: pull infinite;
+	transform-origin: top center;
+}
+
+#pull5:hover{
+	animation: pull infinite;
+	transform-origin: top center;
+}
+
+
+@keyframes pull{
+
+ from { top: 0; left: 0; }
 }
 
 
@@ -188,21 +218,24 @@ body{
 	background-repeat: no-repeat;
 	background-position: right bottom;	
 	background-size: cover contain auto;
+	display: flex;
+	flex-direction: column;
 	margin: 0 auto;
 	overflow: hidden;
 	height: 800px;
-	z-index: 0;
+	z-index: 50;
 
 }
 
 
 
 #kacheli{
+	display: flex;
 	float: right;
 	padding-right: 20em;
-	padding-top: 29.9em;
+	padding-top: 17.7em;
 	animation: kach 5s ease-in-out infinite;
-	transform-origin: top center;
+	transform-origin: top 1px;
 	}
 
 	@keyframes kach{
@@ -210,8 +243,43 @@ body{
 	0%{transform: rotate(0deg)}
 	50%{transform: rotate(-0.4deg)}
 	100%{transform: rotate(0deg)}
+}
+
+#aboutme{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	width: 80%;
+	z-index: 99;
+	margin: 15em 10% 10% 2%;
+	text-shadow: 2px 4px 3px rgba(255,255,255,0.3);
+	background: rgba(255, 255, 238, 0.5);
+	border-radius: 50px;
+	box-shadow: rgba(0, 0, 0, 0.5);
 
 
 
+}
+h2{
+	margin-left: 3em;
+}
+
+table{
+	display: flex;
+	margin: 2em;
+
+}
+td{
+	min-width: 8em;
+	margin-right: 1.5em;
+
+
+}
+
+tr{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 1.5em;
+	font-size: 1.1em;
 
 }
