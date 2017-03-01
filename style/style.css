@@ -511,7 +511,7 @@ tr{
 
 
 #background {
-	background-image: url("../img/background.jpg");
+	/*background-image: url("../img/background.jpg");*/
 	border-image: url('../img/kacheli.png');
 	background-repeat: no-repeat;
 	background-position: right bottom;	
@@ -598,6 +598,8 @@ tr{
 #content .menu .primary-menu {
     list-style-type:none;
     position:relative;
+
+
 }
 
 #content .menu .primary-menu li {
@@ -605,6 +607,7 @@ tr{
     text-align:center;
     margin:0 10px;
     position:relative;
+
 }
 
 #content .menu .primary-menu li a {
@@ -640,6 +643,7 @@ tr{
     -ms-transition:all 1s;
     -khtml-transition:all 1s;
     transition:all 1s;
+
 }
 
 #content .menu .primary-menu li.facebook a:hover { background:#00438f;}
@@ -688,6 +692,26 @@ tr{
     opacity:1;
 }
 
+/* Shadow - icons */
+
+.facebook{
+	box-shadow: 0px 35px 25px 0px black;
+}
+.twitter{
+	box-shadow: 0px 35px 25px 0px black;
+}
+.flickr{
+	box-shadow: 0px 35px 25px 0px black;
+}
+.rss{
+	box-shadow: 0px 35px 25px 0px black;
+}
+.mail{
+	box-shadow: 0px 35px 25px 0px black;
+}
+
+/* Shadow - icons */
+
 #content .menu .primary-menu li span.social-span:after {
     content:"";
     position:absolute;
@@ -701,3 +725,14 @@ tr{
 }
 
 /* footer end*/
+
+
+#copy{
+	position: absolute;
+	float: right;
+	font-size: 30px;
+	align-self: center;
+	margin-top: -80px;
+	transform-origin: top center;
+	color: white;
+}

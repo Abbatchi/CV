@@ -67,3 +67,54 @@ function tab44(){
 	}
 }
 
+////////////////// changement de background automatique //////////
+
+var imgHead = [
+			'img/background.jpg',
+			'img/background3.jpg'
+		], i=1;
+	function csaHead(){
+
+		if(i > (imgHead.length-1)){
+			$('#background').animate({'opacity':'0'},1000,function(){
+				i=1;
+				$('#background').css({'background-image':'url('+imgHead[0]+')'});
+			});
+			$('#background').animate({'opacity':'1'},1000);
+		}else{
+			$('#background').animate({'opacity':'0'},1000,function(){
+				$('#background').css({'background-image':'url('+imgHead[i]+')'});
+				i++;
+			});
+			$('#background').animate({'opacity':'1'},1000);
+		}
+		
+	}
+	var intervalCsaHead = setInterval("csaHead()",8000);
+
+
+	/////////////////////l`heur////////////
+
+	function timer(){
+				var day = new Date(); 
+				var hour = day.getHours();
+				var min = day.getMinutes(); 
+				var secs = day.getSeconds();
+				var greeting;
+
+		
+			if (hour>=5 && hour<12) {
+				greeting = "Matin"; 
+			}else if (hour>=12 && hour<18) {
+				greeting = "Jour"; 
+			}else if (hour>=18 && hour<24) {
+				greeting = "Soir"; 
+			}else {
+				greeting = "Nuit";
+			}
+			var time = ("c`est le " + greeting + "<br>time " + hour + " : " +min+" : "+secs);
+				document.getElementById('copy').innerHTML = time;
+		}
+
+					
+					var r = setInterval("timer()",1000);
