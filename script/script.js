@@ -68,14 +68,15 @@ function tab44(){
 }
 
 ////////////////// changement de background automatique //////////
-
+var day = new Date(); 
+var hour = day.getHours();
 var imgHead = [
 			'img/background.jpg',
 			'img/background3.jpg'
 		], i=1;
 	function csaHead(){
 
-		if(i > (imgHead.length-1)){
+		if(i > (imgHead.length-1 && hour>=18 && hour<24)){
 			$('#background').animate({'opacity':'0'},1000,function(){
 				i=1;
 				$('#background').css({'background-image':'url('+imgHead[0]+')'});
@@ -90,7 +91,7 @@ var imgHead = [
 		}
 		
 	}
-	var intervalCsaHead = setInterval("csaHead()",8000);
+	csaHead();
 
 
 	/////////////////////l`heur////////////
