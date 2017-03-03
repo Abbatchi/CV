@@ -75,12 +75,12 @@ var imgHead = [
 			'img/background3.jpg'
 		], i=1;
 	function csaHead(){
-
-		if(i > (imgHead.length-1 && hour>=24 && hour<6)){
+//&& hour>=24 && hour<6
+		if(i > (imgHead.length-1)){     
 			$('#background').animate({'opacity':'0'},1000,function(){
 				i=1;
 				$('#background').css({'background-image':'url('+imgHead[0]+')'});
-			});
+			})
 			$('#background').animate({'opacity':'1'},1000);
 		}else{
 			$('#background').animate({'opacity':'0'},1000,function(){
