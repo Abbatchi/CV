@@ -352,7 +352,7 @@ tr {
 
 @keyframes wind {
   0% {
-    transform: rotate(2deg); }
+    transform: rotate(0deg); }
   3% {
     transform: rotate(1deg); }
   7% {
@@ -390,7 +390,7 @@ tr {
   95% {
     transform: rotate(1deg); }
   100% {
-    transform: rotate(2deg); } }
+    transform: rotate(0deg); } }
 #pull2 {
   z-index: 2;
   margin-top: -8px;
@@ -448,7 +448,7 @@ tr {
 
 @keyframes wind3 {
   0% {
-    transform: rotate(3deg); }
+    transform: rotate(0deg); }
   3% {
     transform: rotate(1deg); }
   7% {
@@ -494,7 +494,7 @@ tr {
 
 @keyframes wind4 {
   0% {
-    transform: rotate(1deg); }
+    transform: rotate(0deg); }
   3% {
     transform: rotate(2deg); }
   7% {
@@ -538,11 +538,12 @@ tr {
   margin-top: -8px;
   flex-direction: row;
   animation: wind5 30s ease-in-out infinite;
-  transform-origin: top center; }
+  transform-origin: top center; 
+transform: rotate(0deg);}
 
 @keyframes wind5 {
   0% {
-    transform: rotate(3deg); }
+    transform: rotate(0deg); }
   3% {
     transform: rotate(1deg); }
   7% {
@@ -605,10 +606,6 @@ tr {
   animation: pull infinite;
   transform-origin: top center; }
 
-@keyframes pull {
-  from {
-    top: 0;
-    left: 0; } }
 #background {
   border-image: url("../../img/kacheli.png");
   background-repeat: no-repeat;
@@ -829,7 +826,7 @@ tr {
 #ptic {
   position: absolute;
   top: 290px;
-  left: 940px;
+  right: -100px;
   z-index: 98;
 	opacity: 0;}
 
@@ -846,7 +843,9 @@ tr {
   	opacity: 1;
   }
   100% {
-  	left: 1500px;
+  	transform: scale(0.5);
+  	top: 100px;
+  	right: -500px;
   	opacity: 0; } }
 
 

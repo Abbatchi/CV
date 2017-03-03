@@ -321,7 +321,7 @@ tr{
 
 @keyframes wind{
 
-	0%{transform: rotate(2deg)}
+	0%{transform: rotate(0deg)}
 	3%{transform: rotate(1deg)}
 	7%{transform: rotate(0deg)}
 	13%{transform: rotate(1deg)}
@@ -385,7 +385,7 @@ tr{
 
 @keyframes wind3{
 
-	0%{transform: rotate(3deg)}
+	0%{transform: rotate(0deg)}
 	3%{transform: rotate(1deg)}
 	7%{transform: rotate(2deg)}
 	19%{transform: rotate(-1deg)}
@@ -403,7 +403,7 @@ tr{
 	87%{transform: rotate(1deg)}
 	91%{transform: rotate(2deg)}
 	95%{transform: rotate(1deg)}
-	100%{transform: rotate(0deg)}
+	100%{transform: rotate(3deg)}
 
 }
 
@@ -418,7 +418,7 @@ tr{
 
 @keyframes wind4{
 
-	0%{transform: rotate(1deg)}
+	0%{transform: rotate(0deg)}
 	3%{transform: rotate(2deg)}
 	7%{transform: rotate(1deg)}
 	13%{transform: rotate(2deg)}
@@ -450,7 +450,7 @@ tr{
 
 @keyframes wind5{
 
-	0%{transform: rotate(3deg)}
+	0%{transform: rotate(0deg)}
 	3%{transform: rotate(1deg)}
 	7%{transform: rotate(2deg)}
 	13%{transform: rotate(1deg)}
@@ -743,7 +743,7 @@ tr{
     left: 904px;
 	z-index: 99;
 }
-#krona:hover{
+.anim #krona:hover{
 	transform-origin: center;
 	position: absolute;
 	 animation: 1s ease-in-out 0s normal trambling-animation;
