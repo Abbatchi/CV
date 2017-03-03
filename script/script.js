@@ -80,7 +80,7 @@ var imgHead = [
 		if(i > (imgHead.length-1)){     
 			$('#background').animate({'opacity':'0'},1000,function(){
 				i=1;
-				$('#background').css({'background-image':'url('+imgHead[1]+')'});
+				$('#background').css({'background-image':'url('+imgHead[0]+')'});
 			})
 			$('#background').animate({'opacity':'1'},1000);
 		}else{
