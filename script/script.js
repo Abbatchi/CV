@@ -71,8 +71,9 @@ function tab44(){
 var day = new Date(); 
 var hour = day.getHours();
 var imgHead = [
-			'img/background.jpg',
-			'img/background3.jpg'
+			
+			'img/background3.jpg',
+	'img/background.jpg'
 		], i=1;
 	function csaHead(){
 // && hour>=24 && hour<6  // 
