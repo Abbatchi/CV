@@ -76,7 +76,7 @@ var imgHead = [
 		], i=1;
 	function csaHead(){
 
-		if(i > (imgHead.length-1 && hour>=18 && hour<24)){
+		if(i > (imgHead.length-1 && hour>=24 && hour<6)){
 			$('#background').animate({'opacity':'0'},1000,function(){
 				i=1;
 				$('#background').css({'background-image':'url('+imgHead[0]+')'});
